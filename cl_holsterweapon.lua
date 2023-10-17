@@ -45,9 +45,6 @@ Citizen.CreateThread(function()
     end
 end)
 
-AddEventHandler('gameEventTriggered', function (name, args)
-    print('game event ' .. name .. ' (' .. json.encode(args) .. ')')
-  end)
 function SavHolsterWeapon.Functions.HandleWeaponAnimation(ped, weapons, police, cooldown)
     local currentWeapon = GetSelectedPedWeapon(ped)
 
